@@ -67,20 +67,24 @@ body{
 }
 /* styling */
 .file:first-of-type{
-    box-shadow:0 1px 7px 2px var(--Grayish-Blue) , 0px -5px 0px 0px var(--Cyan);
+    box-shadow:0 1px 7px 2px var(--Grayish-Blue) , 0px -5px 0px 0px var(--Red);
     grid-area: head;
+    order: 2;
 }
 .file:nth-child(2){
-    box-shadow:0 1px 7px 2px var(--Grayish-Blue) , 0px -5px 0px 0px var(--Red);
+    box-shadow:0 1px 7px 2px var(--Grayish-Blue) , 0px -5px 0px 0px var(--Cyan);
     grid-area: l-mid ;
+    order: 1;
 }
 .file:nth-child(3){
     box-shadow:0 1px 7px 2px var(--Grayish-Blue) , 0px -5px 0px 0px var(--Blue);
     grid-area:r-mid ;
+    order: 4;
 }
 .file:last-of-type{
     box-shadow:0 1px 7px 2px var(--Grayish-Blue) , 0px -5px 0px 0px var(--Orange);
     grid-area:bottom ;
+    order: 3;
 }
 ::selection{
     background-color: var(--Very-Dark-Blue);
